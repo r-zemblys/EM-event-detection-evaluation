@@ -1,0 +1,61 @@
+{
+    "event_map": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+    },
+    "multiclass_strategy": [
+        "all",
+        "ignore_matched_undef",
+        "ignore_unmatched_undef",
+        "ignore_undef"
+    ],
+    "binary_strategy": [
+        "tn",
+        "error",
+        "ignore"
+    ],
+    "jobs": [
+        {
+            "gt": "majority_voting",
+            "pr": "majority_voting_test",
+            "files": [
+                "majority_voting.csv"
+            ],
+            "unittest": true,
+            "matchers": {
+                "majority-voting": {},
+                "overlap": {},
+                "overlap/one-match": {
+                    "one-match-only": true
+                },
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                }
+            }
+        },
+        {
+            "gt": "meta",
+            "pr": "meta_test",
+            "unittest": true,
+            "matchers": {
+                "majority-voting": {},
+                "overlap": {},
+                "overlap/one-match": {
+                    "one-match-only": true
+                },
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                }
+            }
+        }
+    ]
+}

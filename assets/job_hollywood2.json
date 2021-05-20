@@ -1,0 +1,294 @@
+{
+    "root": "/home/raimondasz/projects/em_classification_metrics/results/etdata",
+    "event_map": {
+        "1": 1,
+        "2": 2,
+        "4": 4,
+        "0": 100
+    },
+    "multiclass_strategy": [
+        "all",
+        "ignore_matched_undef",
+        "ignore_unmatched_undef",
+        "ignore_undef"
+    ],
+    "binary_strategy": [
+        "tn",
+        "error",
+        "ignore"
+    ],
+    "jobs": [
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_handlabeller_1",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_berg",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_blstm",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_dorr",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_idt",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_ihmm",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_ikf",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_imst",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_ivdt",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_ivmp",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_ivt",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_ivvt",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_larsson",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_remodnav",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_sp_tool",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        },
+        {
+            "gt": "Hollywood2EM_handlabeller_final",
+            "pr": "Hollywood2EM_sp_tool_smoothed",
+            "matchers": {
+                "majority-voting": {},
+                "plurality-voting": {},
+                "overlap": {},
+                "overlap/one-match": {"one-match-only": true},
+                "earliest-overlap": {},
+                "maximum-overlap": {},
+                "iou": {},
+                "iou/05": {
+                    "iou_threshold": 0.5
+                },
+                "sample": {}
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+t,x,y,status,evt,evt-test
+1,0,0,True,4,2
+2,0,0,True,4,2
+3,0,0,True,4,1
+4,0,0,True,4,1
+5,0,0,True,4,1
+6,0,0,True,2,1
+7,0,0,True,2,1

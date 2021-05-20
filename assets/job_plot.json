@@ -1,0 +1,132 @@
+{
+    "event_map": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "100": 100,
+        "101": 101,
+        "255": 255
+    },
+    "plot_mode": true,
+    "jobs": [
+        {
+            "gt": "earliest_overlap",
+            "pr": "earliest_overlap_test",
+            "files": [
+                "earliest_overlap.csv"
+            ],
+            "matchers": {
+                "earliest-overlap": [
+                    {},
+                    {
+                        "backward": true
+                    }
+                ]
+            },
+            "match-plot-kwargs": [
+                {
+                    "match-point": "mid",
+                    "linestyle": "-",
+                    "enum": true
+                },
+                {
+                    "match-point": "e",
+                    "linestyle": "--",
+                    "enum": false
+                }
+            ]
+        },
+        {
+            "gt": "earliest_overlap",
+            "pr": "earliest_overlap_test",
+            "label": "remap",
+            "event_map": {
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "0": 100,
+                "255": 255
+            },
+            "files": [
+                "earliest_overlap_fail.csv"
+            ],
+            "matchers": {
+                "earliest-overlap": {}
+            },
+            "match-plot-kwargs": {
+                "exclude_unmatched": true
+            }
+        },
+        {
+            "gt": "earliest_overlap",
+            "pr": "earliest_overlap_test",
+            "files": [
+                "earliest_overlap_fail.csv"
+            ],
+            "matchers": {
+                "earliest-overlap": {}
+            },
+            "match-plot-kwargs": {
+                "exclude_unmatched": true
+            }
+        },
+        {
+            "gt": "earliest_overlap",
+            "pr": "earliest_overlap_test",
+            "files": [
+                "earliest_overlap_sync.csv"
+            ],
+            "matchers": {
+                "earliest-overlap": {}
+            },
+            "match-plot-kwargs": {
+                "exclude_null": true,
+                "exclude_unmatched": true
+            }
+        },
+        {
+            "gt": "overlap",
+            "pr": "overlap_test",
+            "matchers": {
+                "overlap": {}
+            }
+        },
+        {
+            "gt": "maximum_overlap",
+            "pr": "maximum_overlap_test",
+            "matchers": {
+                "maximum-overlap": {}
+            },
+            "match-plot-kwargs": {
+                "exclude_unmatched": true
+            }
+        },
+        {
+            "gt": "maximum_overlap",
+            "pr": "maximum_overlap_test",
+            "label": "03",
+            "files": [
+                "maximum_overlap_fail.csv"
+            ],
+            "matchers": {
+                "iou": {
+                    "iou_threshold": 0.3
+                }
+            }
+        },
+        {
+            "gt": "majority_voting",
+            "pr": "majority_voting_test",
+            "matchers": {
+                "majority-voting": {}
+            },
+            "match-plot-kwargs": {
+                "exclude_unmatched": true
+            }
+        }
+    ]
+}
