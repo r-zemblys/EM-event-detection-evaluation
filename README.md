@@ -15,7 +15,7 @@ python run_calc.py
 
 ## List of publicly available annotated eye movement datasets
 <p align='justify'>
-List of publicly available annotated datasets to illustrate the variety of readily available material for algorithm development and evaluation. Duration reflects the mount of unique eye-tracking data; duration in parentheses -- the total amount of available annotated data (including undefined samples and taking into account several available annotations for a single recording. Sample distributions do not list proportion of undefined samples and samples annotated as noise, blinks and similar. Note that datasets might have different definitions of fixations, saccades, and other events.</p>
+List of publicly available annotated datasets to illustrate the variety of readily available material for algorithm development and evaluation. Duration reflects the amount of unique eye-tracking data (uniqueness judged based on file names); duration in parentheses -- the total amount of available annotated data (including undefined samples and taking into account several available annotations for a single recording). Sample distributions do not list proportion of undefined samples and samples annotated as noise, blinks and similar. Note that datasets might have different definitions of fixations, saccades, and other events.</p>
 
 <table>
 <thead>
