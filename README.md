@@ -149,3 +149,7 @@ To get matcher example plots run:
 python run_calc.py -job assets/job_plot.json
 ```
 Resulting plots will be saved to `./results/match-plots`
+
+## ETRA2022 presentation slides
+
+https://docs.google.com/presentation/d/1mBjzA4piXZzgS-6g4V_yBznfnwZ1wLI29cj2j7mShVE/edit?usp=sharing
