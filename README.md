@@ -1,11 +1,18 @@
 # Evaluating Eye Movement Event Detection: A Review of the State of the Art
+
+## Dissemination
+
 ```bibtex
-@Article{Startsev2021,
+@Article{Startsev2022,
   author = {Mikhail Startsev and Raimondas Zemblys},
   title  = {Evaluating Eye Movement Event Detection: A Review of the State of the Art},
-  year   = {2021},
+  year   = {2022},
 }
 ```
+
+Paper preprint is available [here](https://www.researchgate.net/publication/361277581_Evaluating_Eye_Movement_Event_Detection_A_Review_of_the_State_of_the_Art).
+
+[ETRA2022](https://etra.acm.org/2022/index.html) presentation slides are available [here](https://docs.google.com/presentation/d/1mBjzA4piXZzgS-6g4V_yBznfnwZ1wLI29cj2j7mShVE/edit?usp=sharing).
 
 ## Run
 
@@ -149,7 +156,3 @@ To get matcher example plots run:
 python run_calc.py -job assets/job_plot.json
 ```
 Resulting plots will be saved to `./results/match-plots`
-
-## ETRA2022 presentation slides
-
-https://docs.google.com/presentation/d/1mBjzA4piXZzgS-6g4V_yBznfnwZ1wLI29cj2j7mShVE/edit?usp=sharing
