@@ -10,7 +10,7 @@
 }
 ```
 
-Paper preprint is available [here](https://www.researchgate.net/publication/361277581_Evaluating_Eye_Movement_Event_Detection_A_Review_of_the_State_of_the_Art).
+Paper preprint is available [here](https://www.researchgate.net/publication/361386290_Evaluating_Eye_Movement_Event_Detection_A_Review_of_the_State_of_the_Art).
 
 [ETRA2022](https://etra.acm.org/2022/index.html) presentation slides are available [here](https://docs.google.com/presentation/d/1mBjzA4piXZzgS-6g4V_yBznfnwZ1wLI29cj2j7mShVE/edit?usp=sharing).
 
