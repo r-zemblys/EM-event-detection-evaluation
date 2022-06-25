@@ -3,22 +3,55 @@
 ## Dissemination
 
 ```bibtex
-@Article{Startsev2022,
-  author = {Mikhail Startsev and Raimondas Zemblys},
-  title  = {Evaluating Eye Movement Event Detection: A Review of the State of the Art},
-  year   = {2022},
+@article{startsev2022evaluating,
+  title={Evaluating Eye Movement Event Detection: A Review of the State of the Art},
+  author={Startsev, Mikhail and Zemblys, Raimondas},
+  journal={Behavior Research Methods},
+  pages={1--62},
+  year={2022},
+  publisher={Springer}
 }
 ```
 
-Paper preprint is available [here](https://www.researchgate.net/publication/361386290_Evaluating_Eye_Movement_Event_Detection_A_Review_of_the_State_of_the_Art).
+Full paper is available via [https://rdcu.be/cPS1u](https://rdcu.be/cPS1u) (view-only version) and via [ResearchGate](https://www.researchgate.net/publication/361386290_Evaluating_Eye_Movement_Event_Detection_A_Review_of_the_State_of_the_Art) (preprint).
 
-[ETRA2022](https://etra.acm.org/2022/index.html) presentation slides are available [here](https://docs.google.com/presentation/d/1mBjzA4piXZzgS-6g4V_yBznfnwZ1wLI29cj2j7mShVE/edit?usp=sharing).
+
+[ETRA2022](https://etra.acm.org/2022/index.html) tutorial slides are available via [https://emdetectionmetrics.page.link/etra2022](https://emdetectionmetrics.page.link/etra2022). IPython Notebook demo available here: [assets/ETRA2022 Demo.ipynb](assets/ETRA2022%20Demo.ipynb) 
 
 ## Run
 
 ```python
 python run_calc.py
 ```
+
+## Replicating paper results
+
+1. Download Hollywood2EM (Agtzidis et al., 2020) dataset from [https://gin.g-node.org/ioannis.agtzidis/hollywood2_em](https://gin.g-node.org/ioannis.agtzidis/hollywood2_em)
+
+2. Run the following to convert dataset to the required format:
+```python
+python misc/scripts/run_data_parse.py -root DATASET_ROOT -dataset hollywood2em --coder expert 
+python misc/scripts/run_data_parse.py -root DATASET_ROOT -dataset hollywood2em --coder alg 
+```
+`DATASET_ROOT` is the directory where dataset was downloaded
+
+3. Run evaluation script:
+```python
+python run_calc.py  -job assets/job_hollywood2.json
+```
+The result file will be save to `./results/job_hollywood2.csv`. This can take around 3 hours or more, depending on the computer
+
+4. Run data analysis script:
+```python
+python misc/scripts/analyse_results.py
+```
+Resulting plots will be saved to `./results/job_hollywood2/result-plots`
+
+To get matcher example plots run:
+```python
+python run_calc.py -job assets/job_plot.json
+```
+Resulting plots will be saved to `./results/match-plots`
 
 ## List of publicly available annotated eye movement datasets
 <p align='justify'>
@@ -126,33 +159,3 @@ List of publicly available annotated datasets to illustrate the variety of readi
   </tr>
 </tbody>
 </table>
-
-
-## Replicating paper results
-
-1. Download Hollywood2EM (Agtzidis et al., 2020) dataset from [https://gin.g-node.org/ioannis.agtzidis/hollywood2_em](https://gin.g-node.org/ioannis.agtzidis/hollywood2_em)
-
-2. Run the following to convert dataset to the required format:
-```python
-python misc/scripts/run_data_parse.py -root DATASET_ROOT -dataset hollywood2em --coder expert 
-python misc/scripts/run_data_parse.py -root DATASET_ROOT -dataset hollywood2em --coder alg 
-```
-`DATASET_ROOT` is the directory where dataset was downloaded
-
-3. Run evaluation script:
-```python
-python run_calc.py  -job assets/job_hollywood2.json
-```
-The result file will be save to `./results/job_hollywood2.csv`. This can take around 3 hours or more, depending on the computer
-
-4. Run data analysis script:
-```python
-python misc/scripts/analyse_results.py
-```
-Resulting plots will be saved to `./results/job_hollywood2/result-plots`
-
-To get matcher example plots run:
-```python
-python run_calc.py -job assets/job_plot.json
-```
-Resulting plots will be saved to `./results/match-plots`
